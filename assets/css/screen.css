@@ -1,0 +1,53 @@
+/*********************************/
+/*  Written by Nate Beatty 2012  */
+/*********************************/
+/* Include all custom fonts here */
+@font-face {
+  font-family: DroidSerif;
+  src: url("/assets/fonts/droid/DroidSerif-Regular-webfont.ttf"), url("/assets/fonts/droid/DroidSerif-Regular-webfont.eot"); }
+
+@font-face {
+  font-family: "DroidSerif";
+  src: url("/assets/fonts/droid/DroidSerif-Bold-webfont.ttf"), url("/assets/fonts/droid/DroidSerif-Bold-webfont.eot");
+  font-weight: bold; }
+
+@font-face {
+  font-family: "DroidSerif";
+  src: url("/assets/fonts/droid/DroidSerif-Italic-webfont.ttf") url("/assets/fonts/droid/DroidSerif-Italic-webfont.eot");
+  font-style: italic, oblique; }
+
+/* Commonly Used Mixins */
+/* Global Variables */
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0; 
+}
+
+html, body {
+  height: 100%;
+  font-family: DroidSerif; 
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  color: #08c;
+  transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s; 
+}
+
+a img {
+  border: none; /* Fix for IE */ 
+}
+
+a:hover {
+  color: #006396; 
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}

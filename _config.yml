@@ -1,0 +1,18 @@
+name: DinnerBell
+description: The temporary homepage of DinnerBell App
+url: http://tnbeatty.github.com
+author: Nate Beatty
+
+email: team@dinnerbellapp.com
+
+# Pygments for syntax highlighting
+pygments: true
+
+# Server will automatically regenerate modified files
+auto: true
+
+# Do not publish posts with future date
+future: false
+
+# Late Symantic Indexing
+# lsi: true
