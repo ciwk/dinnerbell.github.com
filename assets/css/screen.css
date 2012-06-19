@@ -3,18 +3,16 @@
 /*********************************/
 /* Include all custom fonts here */
 @font-face {
-  font-family: DroidSerif;
-  src: url("/assets/fonts/droid/DroidSerif-Regular-webfont.ttf"), url("/assets/fonts/droid/DroidSerif-Regular-webfont.eot"); }
+    font-family: 'PTSansRegular';
+    src: url('/assets/fonts/ptsans/pts55f-webfont.eot');
+    src: url('/assets/fonts/ptsans/pts55f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/ptsans/pts55f-webfont.woff') format('woff'),
+         url('/assets/fonts/ptsans/pts55f-webfont.ttf') format('truetype'),
+         url('/assets/fonts/ptsans/pts55f-webfont.svg#PTSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-@font-face {
-  font-family: "DroidSerif";
-  src: url("/assets/fonts/droid/DroidSerif-Bold-webfont.ttf"), url("/assets/fonts/droid/DroidSerif-Bold-webfont.eot");
-  font-weight: bold; }
-
-@font-face {
-  font-family: "DroidSerif";
-  src: url("/assets/fonts/droid/DroidSerif-Italic-webfont.ttf") url("/assets/fonts/droid/DroidSerif-Italic-webfont.eot");
-  font-style: italic, oblique; }
+}
 
 /* Commonly Used Mixins */
 /* Global Variables */
@@ -26,28 +24,45 @@
 
 html, body {
   height: 100%;
-  font-family: DroidSerif; 
+  font-family: PTSansRegular; 
+  background: url("/assets/images/background_noise.png");
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+  padding: 20px 0px;
+  color: #333;
+  text-shadow: 0px 2px 3px #ddd; 
 }
 
 a {
   text-decoration: none;
   border: none;
-  color: #08c;
-  transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -o-transition: color 0.2s; 
+  color: inherit;
 }
 
 a img {
   border: none; /* Fix for IE */ 
 }
 
-a:hover {
-  color: #006396; 
-}
-
 .wrapper {
   height: 100%;
   width: 100%;
+}
+
+.content {
+  margin: 200px auto;
+  width: 700px;
+  text-align: center;
+}
+
+.title {
+  width: 700px;
+  border-bottom: solid 3px #333;
+}
+
+.footer {
+  text-align: right;
+  color: #888;
 }
